@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+
+body{margin:0;padding:0}
+main{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.game-container{
+    width:100%;
+    padding: 50px;
+    background-color: rgb(238, 238, 238);
+}
+
+
+.players_section{
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 330px;
+    position: relative;
+    background-color: #121212;
+    margin: 20px 40px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 8px 27px 22px -17px #606060;
+    transition: top .2s ease-out, box-shadow .2s ease-out;
+    top:0px;
+}
+
+.card_team {
+    color: #bdbdbd;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card_pos {
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card_player-name {
+    text-decoration: none;
+    margin: 0;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.card_img-container {
+    height: 73%;
+    display: flex;
+    justify-content: center;
+}
+
+.card_img {
+    height: 100%;
+    width: auto;
+}
+
+.card_link {
+    text-decoration: none;
+    color: white;
+}
+
+.card_text-container {
+    padding: 10px 15px 20px 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.card_text-container-right_score1 {
+    color: white;
+}
+
+.card_inline-bottom {
+    display: flex;
+    width: 120%;
+    justify-content: space-between;
+}
+
+.card_score {
+    color: white;
+    margin: 3px 0;
+    position: relative;
+    top: 5px;
+    text-align: end;
+}
+
+#card_score1::after{
+    content:'\f140';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700;
+    position: absolute;
+    top:0;
+    left:-27px;
+}
+
+#card_score2::after{
+    content:'\f6de';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700;
+    position: absolute;
+    top:0;
+    left:-25px;
+}
+
+#card_score3::after{
+    content:'\f06e';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 700;
+    position: absolute;
+    top:0;
+    left:-27px;
+}
+
+
+
+
+/* -------------------------- */
+
+.card:hover{
+    box-shadow: 0px 60px 30px -40px #747474;
+    top:-20px;
+}
